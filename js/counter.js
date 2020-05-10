@@ -1,3 +1,8 @@
+function InitFocus()
+{
+    document.getElementById('stringBox').focus()    
+}
+
 function Contar() 
 {    
     document.getElementById('parrafo').innerHTML = 'Cantidad de caracteres: ' + document.getElementById('stringBox').value.length    
