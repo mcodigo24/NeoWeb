@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo</title>
+    <link rel="icon" type="image/png" href="imagenes/geom.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/counter.js"></script>
+</head>
+<body>   
+    <header class="header ">
+        <h1>Neo Counter</h1>        
+        <figure class="infomacion tooltip">
+            <img src="imagenes/info.svg" height="45" alt="Informacion">             
+            <span class="tooltiptext">Ingrese el texto en el cuadro y calcule rapidamente la cantidad de caracteres.</span>
+        </figure>        
+    </header>
+    <section class="hero">
+        <div class="magic">   
+            <h3>Ingrese aquí el texto:</h3>
+            <textarea id="stringBox" cols="100" rows="10" onkeyup="Contar()" onchange="Contar()" onkeypress="Contar()" placeholder="Texto" class="textBox"></textarea>
+            <p id="parrafo">Cantidad de caracteres: 0</p>               
+        </div>
+        <div class="buttons">  
+            <button onclick="btnLimpiar()" class="btn">Limpiar</button>
+            <button class="btn" onclick="btnCopiar()">Copiar</button>        
+        </div>
+    </section>    
+</body>
+</html>

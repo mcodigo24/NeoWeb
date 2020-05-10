@@ -1,0 +1,102 @@
+body {
+    background: rgb(41, 83, 90); 
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h1 {
+    color: #ECECEC;
+    margin-left: 15px;  
+}
+
+h3 {
+    color: #ECECEC;
+}
+
+p {
+    color: #ECECEC;
+    font-size: 25px;
+}
+
+.header {
+    background: rgb(30, 66, 90);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.hero {
+    height: 400px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.magic {    
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: center;    
+}
+
+.buttons {    
+    width: 500px;
+    display: inherit;    
+    justify-content: inherit;
+    align-items: center; 
+}
+
+.btn {
+    outline:none;
+    border: none;
+    cursor: pointer;   
+    position: relative;
+    background-color: #fcad26;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(53, 51, 51);    
+    letter-spacing: 1px;
+    padding: 10px 40px;
+    margin: 5px 15px;
+    border-radius: 15px;
+    box-shadow: 0 6px #efa424;
+}
+
+.btn:hover {
+    box-shadow: 0 4px #efa424;
+    top: 2px;
+}
+
+.btn:active {
+    box-shadow: none;
+    top: 6px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 6px;
+    
+    position: absolute;
+    z-index: 1;
+
+    top: 50px;
+    right: 65px; 
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+  
+.textBox {
+    font-size: 16px;
+}
