@@ -8,7 +8,7 @@ body {
     background: rgb(41, 83, 90); 
     font-family: 'Quicksand', sans-serif;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;        
 }
 
 h1 {
@@ -45,14 +45,15 @@ img {
     height: 85vh;   
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+    justify-content: flex-start;
+    align-items: center;     
+    margin-top: 55px;
 }
 
 .magic {    
     display: inherit;
     flex-direction: inherit;    
-    align-items: center;    
+    align-items: center;        
 }
 
 .textBox {
@@ -64,7 +65,7 @@ img {
 .buttons {    
     width: 500px;
     display: inherit;    
-    justify-content: inherit;
+    justify-content: center;
     align-items: center; 
 }
 
