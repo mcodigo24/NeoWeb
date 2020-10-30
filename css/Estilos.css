@@ -1,5 +1,5 @@
 body {
-    background: rgb(41, 83, 90); 
+    background: blue;/*rgb(41, 83, 90); */
     font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
