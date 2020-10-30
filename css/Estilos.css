@@ -1,9 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: blue;/*rgb(41, 83, 90); */
+    background: rgb(41, 83, 90); 
     font-family: 'Quicksand', sans-serif;
     display: flex;
-    flex-direction: column;
-    margin: 0;
+    flex-direction: column;    
 }
 
 h1 {
@@ -13,35 +18,47 @@ h1 {
 
 h3 {
     color: #ECECEC;
+    margin-bottom: 10px;
 }
 
 p {
     color: #ECECEC;
-    font-size: 25px;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+     height: 45px;
+     margin-right: 15px;
 }
 
 .header {
     background: rgb(30, 66, 90);
-    height: 100px;
+    height: 15vh;
     display: flex;
     align-items: center;
     justify-content: space-between;    
 }
 
 .hero {
-    height: 400px;   
+    height: 85vh;   
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 35px;
+    align-items: center; 
 }
 
 .magic {    
     display: inherit;
-    flex-direction: inherit;
-    justify-content: inherit;
+    flex-direction: inherit;    
     align-items: center;    
+}
+
+.textBox {
+    font-size: 16px;
+    width: 80%;
+    border: none;
 }
 
 .buttons {    
@@ -95,8 +112,4 @@ p {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
-}
-  
-.textBox {
-    font-size: 16px;
 }
