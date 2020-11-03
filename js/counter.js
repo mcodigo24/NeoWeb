@@ -1,21 +1,37 @@
-function Contar() 
-{    
-    document.getElementById('parrafo').innerHTML = 'Cantidad de caracteres: ' + document.getElementById('stringBox').value.length    
-}
+(function () {
+  const textArea = document.getElementById("stringBox");
+  const labelRta = document.getElementById("parrafo");
+  const btnClear = document.getElementById("btnLimpiar");
+  const btnCopy = document.getElementById("btnCopiar");
+  const labelCount = `Cantidad de caracteres: `;
+  const initialValue = labelCount + `0`;
 
-function btnLimpiar()
-{
-    document.getElementById('stringBox').value = ""    
-    document.getElementById('stringBox').focus()    
-    document.getElementById('parrafo').innerHTML = 'Cantidad de caracteres: 0'
-}
+  var init = () => {
+    labelRta.innerHTML = initialValue;
+    bindEvents();
+  };
 
-function btnCopiar()
-{
-    var copyText = document.getElementById('stringBox')
-    
-    copyText.select()
-    copyText.setSelectionRange(0, 99999)
-    
-    document.execCommand("copy")
-}
+  var bindEvents = () => {
+    textArea.addEventListener("input", countCharacters);
+    btnClear.addEventListener("click", clearBtn);
+    btnCopy.addEventListener("click", copyBtn);
+  };
+
+  function countCharacters() {
+    labelRta.innerHTML = labelCount + textArea.value.length;
+  }
+
+  function clearBtn() {
+    textArea.value = "";
+    textArea.focus();
+    labelRta.innerHTML = initialValue;
+  }
+
+  function copyBtn() {
+    textArea.select();
+    textArea.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+  }
+
+  init();
+})();

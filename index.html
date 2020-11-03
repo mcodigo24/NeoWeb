@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Neo</title>
+    <title>Neo Counter</title>
     <link rel="icon" type="image/png" href="imagenes/geom.png">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/Estilos.css">
-    <script src="js/counter.js"></script>
+    <link rel="stylesheet" href="css/Estilos.css">    
 </head>
 <body>   
     <header class="header">
@@ -20,13 +19,14 @@
     <section class="hero">
         <div class="magic">   
             <h3>Ingrese aquí el texto:</h3>
-            <textarea id="stringBox" cols="100" rows="10" onkeydown="Contar()" onkeyup="Contar()" onkeypress="Contar()" onchange="Contar()" onpaste="Contar()" placeholder="Texto" class="textBox"></textarea>
-            <p id="parrafo">Cantidad de caracteres: 0</p>               
+            <textarea id="stringBox" cols="100" rows="10"  placeholder="Texto" class="textBox"></textarea>
+            <p id="parrafo"> </p>               
         </div>
         <div class="buttons">  
-            <button onclick="btnLimpiar()" class="btn">Limpiar</button>
-            <button class="btn" onclick="btnCopiar()">Copiar</button>        
+            <button id="btnLimpiar" class="btn">Limpiar</button>
+            <button id="btnCopiar" class="btn">Copiar</button>        
         </div>
     </section>    
+    <script src="js/counter.js"></script>
 </body>
 </html>
